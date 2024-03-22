@@ -21,6 +21,7 @@
         "url": "git+https://github.com/mmf-fe/vite-plugin-cdn-import.git"
     },
     "scripts": {
+        "prepare": "npm run build",
         "dev": "npm run build -- --watch",
         "example:vue": "npm -C example/vue run dev",
         "example:react": "npm -C example/react run dev",
@@ -37,6 +38,7 @@
         "vite": "^2.3.7"
     },
     "dependencies": {
-        "rollup-plugin-external-globals": "^0.6.1"
+        "rollup": "^4.13.0",
+        "rollup-plugin-external-globals": "^0.9.2"
     }
 }
